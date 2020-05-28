@@ -1,0 +1,16 @@
+module td1 
+{
+	interface GestionSalles
+	{
+		boolean ajouterSalle(in string nomSalle, in long nbPlaces);
+		
+		boolean salleExiste(in string nomSalle);
+		long capaciteSalle(in string nomSalle);
+		long disponibiliteSalle(in string nomSalle);
+		string placerPersonne(in string nomPersonne);
+		
+		boolean placerPersonneDansSalle(in string nomSalle, in string nomPersonne);
+		
+		string salleAttribuee(in string nomPersonne);
+	};
+};
